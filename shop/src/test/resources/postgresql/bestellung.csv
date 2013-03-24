@@ -1,0 +1,6 @@
+bestell_id;bezahlart;lieferart;gesamtpreis;status;erzeugt;aktualisiert;idx;kunde_fk
+1;paypal;spedition;40;offen;30.03.2012 00:00;30.03.2012 00:00;0;1
+2;kreditkarte;post;16;geliefert;30.03.2012 00:00;30.03.2012 00:00;0;2
+3;kreditkarte;post;99;in Lieferung;30.03.2012 00:00;30.03.2012 00:00;0;3
+4;paypal;spedition;69;offen;30.03.2012 00:00;30.03.2012 00:00;0;4
+5;paypal;spedition;2;in Lieferung;30.03.2012 00:00;30.03.2012 00:00;0;5

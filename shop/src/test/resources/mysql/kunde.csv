@@ -1,0 +1,6 @@
+kunden_id;name;vorname;geschlecht;regestrierdatum;kundenart;newsletter;email;passwort;adresse;erzeugt;aktualisiert
+1;Muster;Max;m;27.03.2012;p;y;Max.Muster@fake.de;test;1;30.03.2012 00:00;30.03.2012 00:00
+2;Fax;Fritz;m;20.03.2012;p;y;Fritz.Max@fakemail.de;test;2;30.03.2012 00:00;30.03.2012 00:00
+3;Tante;Emma;w;04.03.2012;g;y;Emma.Tanke@webb.com;test;3;30.03.2012 00:00;30.03.2012 00:00
+4;Onkel;Sam;m;01.01.2012;g;y;Sam.Onkel@Bau.net;test;4;30.03.2012 00:00;30.03.2012 00:00
+5;Simpson;Homer;m;22.02.2012;p;n;Homer.Jay.Simpson@gelb.com;marge;5;30.03.2012 00:00;30.03.2012 00:00

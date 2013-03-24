@@ -1,0 +1,64 @@
+<!ELEMENT dataset (
+    adresse*,
+    bestellposition*,
+    bestellung*,
+    kunde*,
+    produkt*)>
+
+<!ELEMENT adresse EMPTY>
+<!ATTLIST adresse
+    adresse_id CDATA #REQUIRED
+    plz CDATA #REQUIRED
+    strasse CDATA #IMPLIED
+    ort CDATA #REQUIRED
+    erzeugt CDATA #REQUIRED
+    aktualisiert CDATA #REQUIRED
+>
+
+<!ELEMENT bestellposition EMPTY>
+<!ATTLIST bestellposition
+    position_id CDATA #REQUIRED
+    anzahl CDATA #REQUIRED
+    erzeugt CDATA #REQUIRED
+    aktualisiert CDATA #REQUIRED
+    bestell_fk CDATA #REQUIRED
+    produkt_fk CDATA #REQUIRED
+>
+
+<!ELEMENT bestellung EMPTY>
+<!ATTLIST bestellung
+    bestell_id CDATA #REQUIRED
+    bestelldatum CDATA #REQUIRED
+    bezahlart CDATA #IMPLIED
+    lieferart CDATA #IMPLIED
+    gesamtpreis CDATA #REQUIRED
+    status CDATA #IMPLIED
+    kunde_fk CDATA #REQUIRED
+    erzeugt CDATA #REQUIRED
+    aktualisiert CDATA #REQUIRED
+>
+
+<!ELEMENT kunde EMPTY>
+<!ATTLIST kunde
+    kunden_id CDATA #REQUIRED
+    name CDATA #REQUIRED
+    vorname CDATA #IMPLIED
+    geschlecht CDATA #IMPLIED
+    kundenart CDATA #IMPLIED
+    newsletter CDATA #IMPLIED
+    email CDATA #REQUIRED
+    passwort CDATA #IMPLIED
+    adress_fk CDATA #REQUIRED
+    erzeugt CDATA #REQUIRED
+    aktualisiert CDATA #REQUIRED
+>
+
+<!ELEMENT produkt EMPTY>
+<!ATTLIST produkt
+    produkt_id CDATA #REQUIRED
+    bezeichnung CDATA #REQUIRED
+    preis CDATA #IMPLIED
+    erzeugt CDATA #REQUIRED
+    aktualisiert CDATA #REQUIRED
+>
+

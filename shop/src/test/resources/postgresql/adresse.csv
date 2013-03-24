@@ -1,0 +1,6 @@
+adress_id;plz;strasse;ort;erzeugt;aktualisiert;kunde_fk
+1;76275;Brunnenstrasse 100;Ettlingen;30.03.2012 00:00;30.03.2012 00:00;1
+2;76275;Hubertsrasse 2;Ettlingen;30.03.2012 00:00;30.03.2012 00:00;2
+3;11111;Wagenweg 44;Entenhausen;30.03.2012 00:00;30.03.2012 00:00;3
+4;76271;Talbaueralee 8;Karlsruhe;30.03.2012 00:00;30.03.2012 00:00;4
+5;55555;Evergreen Terrence 1;Springfield;30.03.2012 00:00;30.03.2012 00:00;5

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="bestellposition" type="bestellposition"/>
+
+  <xs:element name="bestellung" type="bestellung"/>
+
+  <xs:element name="kunde" type="kunde"/>
+
+  <xs:complexType name="bestellung">
+    <xs:sequence>
+      <xs:element name="bezahlart" type="xs:string" minOccurs="0"/>
+      <xs:element name="gesamtpreis" type="xs:int"/>
+      <xs:element name="lieferart" type="xs:string" minOccurs="0"/>
+      <xs:element name="status" type="xs:string" minOccurs="0"/>
+      <xs:element name="Bestellpositionen">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Bestellposition" type="bestellposition" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="kunde" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="bestellId" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="bestellposition">
+    <xs:sequence>
+      <xs:element name="anzahl" type="xs:int"/>
+      <xs:element name="produkt" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="positionId" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="kunde">
+    <xs:sequence>
+      <xs:element name="aktualisiert" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="email" type="xs:string" minOccurs="0"/>
+      <xs:element name="erzeugt" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="geschlecht" type="xs:string" minOccurs="0"/>
+      <xs:element name="kundenart" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="newsletter" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="passwort" type="xs:string" minOccurs="0"/>
+      <xs:element name="registrierdatum" type="xs:string" minOccurs="0"/>
+      <xs:element name="vorname" type="xs:string" minOccurs="0"/>
+      <xs:element name="bestellungen" type="xs:string" minOccurs="0"/>
+      <xs:element name="adresse" type="adresse" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="kundenId" type="xs:long"/>
+  </xs:complexType>
+
+  <xs:complexType name="adresse">
+    <xs:sequence>
+      <xs:element name="ort" type="xs:string"/>
+      <xs:element name="plz" type="xs:string"/>
+      <xs:element name="strasse" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="adressId" type="xs:long" use="required"/>
+  </xs:complexType>
+</xs:schema>
+
